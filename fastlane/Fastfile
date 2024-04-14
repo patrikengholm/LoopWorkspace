@@ -242,9 +242,11 @@ platform :ios do
       key_content: "#{FASTLANE_KEY}"
     )
     
-    def find_bundle_id(identifier)
-      bundle_id = Spaceship::ConnectAPI::BundleId.find(identifier)
-    end
+   # def find_bundle_id(identifier)
+   #   bundle_id = Spaceship::ConnectAPI::BundleId.find(identifier)
+     def find_bundle_id(identifier)
+      bundle_id = 4
+end
 
     find_bundle_id("com.#{TEAMID}.loopkit.Loop")
   end
